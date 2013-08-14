@@ -1,0 +1,12 @@
+<h1>Edit Goal</h1>
+
+<%= simple_form_for @goal do |f| %>
+	<fieldset>
+		<legend>Goal</legend>
+		<div>
+			<%= f.input :title %>
+		</div>
+			<%= f.input :summary %>
+	</fieldset>
+	<%= f.submit class: "btn btn-primary btn-large" %>
+<% end %>	
